@@ -1,0 +1,200 @@
+<html ng-app="myApp">
+<head>
+	<title>Blaine R. Gunn</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel='stylesheet' media='screen and (max-width: 600px)' href='mobile.css' />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="contianer">
+		<div id="title">
+			Blaine R. Gunn
+		</div>
+		<div id="menu">
+			<div class="home" id="menuItem">
+				<i class=" icon icon-home"></i>
+				Home
+			</div>
+			<div onclick="bioClick()" class="bio" id="menuItem">
+				<a href="#bioView">
+				<i class=" icon icon-bio"></i>
+				Bio
+				</a>
+			</div>
+			<div onclick="resumeClick()" class="resume" id="menuItem">
+				<a href="#resumeView">
+			  	<i class=" icon icon-resume"></i>
+			  	Resume
+			  	</a>
+			</div>
+			<div onclick="blogClick()" class="blog" id="menuItem">
+				<a href="#blogView">
+				<i class=" icon icon-blog"></i>
+				Blog
+				</a>
+			</div>
+			<div onclick="contactClick()" class="contact" id="menuItem">
+				<a href="#contactView">
+				<i class=" icon icon-contact"></i>
+				Contact
+				</a>
+			</div>
+		</div>
+
+		<!-- different views start here -->
+		<div id="homeView">
+			
+		</div>
+
+		<!-- different views start here -->
+		<div id="resumeView">
+			<!-- <iframe width="730px" height="1100px" src="https://docs.google.com/document/d/1pmWb9HLeZ7ZZyCTvg4CsR6vGQAnN2FJUVRUMIEVovVw/pub?embedded=true"></iframe> -->
+			<div class="resumeFrame">
+				<p>Blaine Gunn<br />
+				1606 North 25 East Layton, Utah 84041 <br />
+				801.540.9690</p>
+
+				<p>blainegunn@gmail.com | github.com/blainegunn | linkedin.com/in/blainegunn</p>
+
+				<p>Objective<br />
+				</p>
+
+				<p>Secure a job at Alliance Health as a front end web developer. Add value to the team by delivering results with exactness and attention to detail.</p>
+
+				<p>Operations Specialist<br />
+				</p>
+
+				<p>Highly comfortable working with Javascript, HTML5 and CSS3. Very familiar with the AngualrJS framework. Excellent interpersonal, communication, and logical problem solving skills. Experienced in risk management, problem solving, process improvement, and team leadership. Culturally diverse background enhances decision-making, perspectives, and strategies. Will add value to the firm through strategic thinking, discipline, perseverance, and integrity.</p>
+
+				<p><a></a>Education<br />
+				</p>
+
+				<p><a></a>Weber State University - Ogden, Utah</p>
+
+				<p>Bachelors of Arts in Technical Sales </p>
+
+				<p>Charter President - Weber State Collegiate DECA Sept. 2010 – Present</p>
+
+				<ul>
+				<li>Helped lead and manage organization of more than twenty students by training and providing resources that will help them prepare for their monthly volunteer efforts in the community. Planned and organized weekly meetings that train individuals on leadership, teamwork, and relational development.</li>
+				</ul>
+
+				<p>Experience</p>
+
+				<p>Needle Inc.</p>
+
+				<p>Software Engineer February 2013 – Present </p>
+
+				<ul>
+				<li>Build custom projects for Adidas, Nike, Coach and others.</li>
+				<li>Created a system for streamlining customization for several other partners that uses variables.</li>
+				<li>Identify and fix bugs in client facing and user facing software. </li>
+				<li>Add new features to exisiting software and refactor existing code.</li>
+				</ul>
+
+				<p>Qualtrics Labs LLC.<br />
+				Full Time Product Specialist Dec 2012– February 2013</p>
+
+				<ul>
+				<li>Worked personally with clients such as Nike, The Wall Street Journal, and Facebook. Help clients program surveys with their advanced logic. Help clients style their surveys using HTML5, CSS3, and JavaScript. Built custom email templates, reports, and landing pages for clients using HTML5 and CSS3.</li>
+				<li>Opened an European office in Dublin where I personally took care of all customization needs for all EMEA clients; as well as taking care of all operations.</li>
+				</ul>
+
+				<p>Apple Inc.<br />
+				Part-Time at the Genius Bar October 2010 – February 2013</p>
+
+				<ul>
+				<li>Troubleshot software and hardware issue on OS X and iOS.</li>
+				<li>Resolved all issues within the allotted appointment time with precisions and exactness.</li>
+				</ul>
+
+				<p>LDS Missionary <br />
+				Cape Verde Praia September 2007 - September 2009<br />
+				Served a full-time LDS mission on the archipelago off the west coast of Africa. Learned four languages while also directly leading up to 25 other missionaries.</p>
+
+			</div>
+		</div>
+
+		<!-- different views start here -->
+
+		<div id="bioView">
+			<p>
+				I'm a 26 year old soft ware developer from Eastern England. I currenlty live in Salt Lake City, UT. I enjoy playing soccer and reading programming books on my spare time. I spoke 5 differnet languages growing up, unforuantely today in additon to English I only speak Portuguese. I'm the middle child of 3; older brother, younger sister. 
+			</p>
+			<div ng-controller="photoCtrl" id="photoFrame">
+				<div ng-repeat="pics in photos">
+					<img class="bioPhotos" src="photos/{{pics.photo}}">
+				</div>	
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<!-- different views start here -->
+
+		<div id="contactView">
+			<div class="contacts">
+				<div class="linkedIn">
+					<a href="http://www.linkedin.com/in/blainegunn/">
+						<i class=" icon icon-linkedin"></i>
+						LinkedIn
+					</a>
+				</div>
+				<div class="facebook">
+					<a href="http://www.facebook.com/brgunn">
+						<i class=" icon icon-facebook"></i>
+						Facebook
+					</a>
+				</div>
+				<div class="instagram">
+					<a href="http://www.instagram.com/blainegunn">
+						<i class=" icon icon-instagram"></i>
+						Instagram
+					</a>
+				</div>
+				<div class="twitter">
+					<a href="http://www.twitter.com/blainegunn">
+						<i class=" icon icon-twitter"></i>
+						Twitter
+					</a>
+				</div>
+				<div class="google">
+					<a href="http://www.google.com/+blainegunn">
+						<i class=" icon icon-google"></i>
+						Google +
+					</a>
+				</div>
+				<div class="github">
+					<a href="http://www.github.com/blainegunn">
+						<i class=" icon icon-github"></i>
+						Git Hub
+					</a>
+				</div>
+			</div>
+			<div class="sendEmail">
+				<form action="mailto:blainegunn@me.com" method="post" enctype="text/plain">
+				Name:<br>
+				<input type="text" name="name"><br>
+				E-mail:<br>
+				<input type="text" name="mail"><br>
+				Comment:<br>
+				<textarea rows="8" cols="50" name="comments"></textarea><br><br>
+				<input type="submit" value="Send">
+				</form>
+			</div>
+		</div>
+
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular.js"></script>
+<script type="text/javascript" src="fun.js"></script>
+<script src="blaineApp.js"></script>
+</body>
+</html>

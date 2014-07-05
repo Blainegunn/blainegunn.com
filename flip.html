@@ -1,0 +1,52 @@
+<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+	<div class="flipper">
+		<div class="front">
+			<img src="http://www.fm-base.co.uk/forum/attachments/football-manager-2013-manager-stories/320693d1363703423-chelsea-fc-samillyroy-legacy-returns-fm13-chelsea-logo.jpg">
+		</div>
+		<div class="back">
+			<img src="http://www.finchandpartners.com/images/Finch_Partners_Chelsea_FC_Logo.png">
+		</div>
+	</div>
+</div>
+<style>
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+</style>

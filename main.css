@@ -1,0 +1,79 @@
+body {
+	background-color: pink;
+	font-family: 'Signika', sans-serif;
+}
+textarea{
+    resize: none;
+}
+#title{
+	font-size: 70px;
+	text-align: center;
+	padding: 30px 0 70px 0;
+}
+#menu {
+	float: right;
+	border: 2px red solid;
+	border-radius: 70px;
+	padding: 22px;
+	background: aliceblue;
+	position: relative;
+	top: -170;
+}
+#menuItem{
+	cursor: pointer;
+	margin: 1.5px
+
+}
+
+a {
+	text-decoration: none;
+	color: green;
+}
+a:hover{
+	color: yellow;
+}
+.contacts i {
+	font-size: 50px;
+}
+.contacts{
+	float: left;
+}
+.sendEmail{
+	margin: 0 auto;
+	width: 400px;
+}
+.sendEmail input{
+	height: 30px;
+	width: 200px;
+}
+
+#contactView, #bioView, #resumeView {
+	display: none;
+	width: 100%;
+}
+#bioView p{
+	width: 800px;
+}
+#bioView p, #bioView #photoFrame{
+	margin: 0 auto;
+}
+.bioPhotos{
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: 10px;
+}
+.bioPhotos:hover{
+	transform: rotateY(180deg);
+}
+#photoFrame{
+	padding-top: 30px;
+	width: 880px;
+}
+.resumeFrame{
+	margin: 0 auto;
+	border: 2px green solid;
+	width: 650px;
+	background-color: beige;
+	padding: 15px;
+}
