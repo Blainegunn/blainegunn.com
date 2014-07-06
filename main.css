@@ -53,7 +53,12 @@ a:hover{
 }
 .sendEmail{
 	margin: 0 auto;
-	width: 400px;
+	width: 375px;
+	border: 3px yellow solid;
+	clear: both;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: cornflowerblue;
 }
 .sendEmail input{
 	height: 30px;

@@ -1,9 +1,36 @@
-@media screen {
-  body {
-    background-color: red;
-  }
-  #bio {
-  	color: green;
-  	font-weight: bold;
-  }
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+body{
+	background-color: rgb(67, 187, 110);\
+	width: 400px;
+	font-size: 10px;
+}
+#container{
+	width: 400px;
+}
+#menu {
+	float: none;
+	border: 0px red solid;
+	border-radius: 0px;
+	padding: 0px;
+	background: aliceblue;
+	position: fixed;
+	bottom: 0px;
+	top: inherit;
+	width: 100%;
+	left: 0px;
+}
+#musicPlayer{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
 }
