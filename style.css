@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icons';
-	src:url('fonts/icons.eot?drvw10');
-	src:url('fonts/icons.eot?#iefixdrvw10') format('embedded-opentype'),
-		url('fonts/icons.woff?drvw10') format('woff'),
-		url('fonts/icons.ttf?drvw10') format('truetype'),
-		url('fonts/icons.svg?drvw10#icons') format('svg');
+	src:url('fonts/icons.eot?-8fq4fp');
+	src:url('fonts/icons.eot?#iefix-8fq4fp') format('embedded-opentype'),
+		url('fonts/icons.woff?-8fq4fp') format('woff'),
+		url('fonts/icons.ttf?-8fq4fp') format('truetype'),
+		url('fonts/icons.svg?-8fq4fp#icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -34,6 +34,18 @@
 }
 .icon-contact:before {
 	content: "\e603";
+}
+.icon-play:before {
+	content: "\e60b";
+}
+.icon-pause:before {
+	content: "\e60c";
+}
+.icon-unmute:before {
+	content: "\e60d";
+}
+.icon-mute:before {
+	content: "\e60e";
 }
 .icon-google:before {
 	content: "\e604";

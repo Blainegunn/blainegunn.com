@@ -12,30 +12,32 @@
 			Blaine R. Gunn
 		</div>
 		<div id="menu">
-			<div class="home" id="menuItem">
+			<div onclick="homeClick()" class="home" id="menuItem">
+				<a href="#h">
 				<i class=" icon icon-home"></i>
 				Home
+				</a>
 			</div>
 			<div onclick="bioClick()" class="bio" id="menuItem">
-				<a href="#bioView">
+				<a href="#b">
 				<i class=" icon icon-bio"></i>
 				Bio
 				</a>
 			</div>
 			<div onclick="resumeClick()" class="resume" id="menuItem">
-				<a href="#resumeView">
+				<a href="#r">
 			  	<i class=" icon icon-resume"></i>
 			  	Resume
 			  	</a>
 			</div>
 			<div onclick="blogClick()" class="blog" id="menuItem">
-				<a href="#blogView">
+				<a href="#blog">
 				<i class=" icon icon-blog"></i>
 				Blog
 				</a>
 			</div>
 			<div onclick="contactClick()" class="contact" id="menuItem">
-				<a href="#contactView">
+				<a href="#c">
 				<i class=" icon icon-contact"></i>
 				Contact
 				</a>
@@ -44,7 +46,9 @@
 
 		<!-- different views start here -->
 		<div id="homeView">
-			
+			<div id="intro">
+				<div id="player"></div>
+			</div>
 		</div>
 
 		<!-- different views start here -->
@@ -127,12 +131,8 @@
 					<img class="bioPhotos" src="photos/{{pics.photo}}">
 				</div>	
 			</div>
+			<div class="spacer"></div>
 		</div>
-
-
-
-
-
 
 
 
@@ -140,39 +140,47 @@
 
 		<!-- different views start here -->
 
+		<div id="blogView">
+			
+		</div>
+
+
+
+		<!-- different views start here -->
+
 		<div id="contactView">
 			<div class="contacts">
-				<div class="linkedIn">
+				<div id="contactIcon" class="linkedIn">
 					<a href="http://www.linkedin.com/in/blainegunn/">
 						<i class=" icon icon-linkedin"></i>
 						LinkedIn
 					</a>
 				</div>
-				<div class="facebook">
+				<div id="contactIcon" class="facebook">
 					<a href="http://www.facebook.com/brgunn">
 						<i class=" icon icon-facebook"></i>
 						Facebook
 					</a>
 				</div>
-				<div class="instagram">
+				<div id="contactIcon" class="instagram">
 					<a href="http://www.instagram.com/blainegunn">
 						<i class=" icon icon-instagram"></i>
 						Instagram
 					</a>
 				</div>
-				<div class="twitter">
+				<div id="contactIcon" class="twitter">
 					<a href="http://www.twitter.com/blainegunn">
 						<i class=" icon icon-twitter"></i>
 						Twitter
 					</a>
 				</div>
-				<div class="google">
+				<div id="contactIcon" class="google">
 					<a href="http://www.google.com/+blainegunn">
 						<i class=" icon icon-google"></i>
 						Google +
 					</a>
 				</div>
-				<div class="github">
+				<div id="contactIcon" class="github">
 					<a href="http://www.github.com/blainegunn">
 						<i class=" icon icon-github"></i>
 						Git Hub
@@ -191,9 +199,23 @@
 				</form>
 			</div>
 		</div>
-
+			<div id="musicPlayer">
+			<a href="#" id="mute">
+				<i class=" icon icon-mute"></i>
+			</a>
+			<a href="#" id="resume">
+				<i class=" icon icon-play"></i>
+			</a>
+			<a href="#" id="pause">
+				<i class=" icon icon-pause"></i>
+			</a>
+			<a href="#" id="unmute">
+				<i class=" icon icon-unmute"></i>
+			</a>
+		</div>
 	</div>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular.js"></script>
+<script type="text/javascript" src="http://www.youtube.com/player_api"></script>
 <script type="text/javascript" src="fun.js"></script>
 <script src="blaineApp.js"></script>
 </body>
